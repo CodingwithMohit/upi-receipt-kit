@@ -71,6 +71,12 @@ The project does not include checkout, payment verification, customer-specific d
 
 The three roots in `src/templates/` use the shared colors, type, spacing, and components in `src/theme.ts` and `src/components/`. The same order object is passed to the email, web, and paid invoice templates. No totals are copied into the order fixtures.
 
+## How Hyper Elements is used
+
+The project uses `@hyper-elements/react` version 0.4.6 to define three React template roots: `Email` for the email, `Page` for responsive web receipts, and `Document` for the print-ready A4 invoice. Each root receives the same merchant and order data and uses shared components and theme tokens.
+
+In `scripts/build.ts`, the library's `render()` function turns each template into HTML and, for emails, plain text. The build writes those results to `output/` and checks renderer diagnostics for warnings. For the invoice, the `Document` template produces print-ready HTML, then Playwright opens it in Chromium and saves an A4 PDF with `page.pdf()`.
+
 ## Project layout
 
 ```text
