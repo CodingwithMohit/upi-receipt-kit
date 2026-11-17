@@ -17,6 +17,8 @@ Research checked on 17 November 2026.
 
 The package registry reported `@hyper-elements/react` version `0.4.6` as latest. The GitHub URL formerly used for Unlayer Elements redirects to the renamed Hyper Elements project. The installed package name is **`@hyper-elements/react`**, not `@unlayer/react-elements`.
 
+The proposed fictional merchant name, "Mogra Parcel Co.", was checked with an exact-phrase web search on 17 November 2026. No matching company listing appeared in those results. This is a basic search, not trademark clearance.
+
 Install the exact version verified during this research:
 
 ```bash
@@ -89,4 +91,3 @@ The versioned `GUIDE.md` calls out these first-try mistakes:
 - Use `href`, not `link`, for `Menu` items.
 - Render a synchronous template tree. Fetch data before creating it; async or suspending template components are errors.
 - Pass dynamic values as text or props so the renderer can escape them. Validate link targets.
-
