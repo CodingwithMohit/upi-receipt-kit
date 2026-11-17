@@ -1,0 +1,29 @@
+{
+  "orderNumber": "MPC-260117-02",
+  "customerName": "Test Customer",
+  "orderedAt": "2026-11-17T07:20:00.000Z",
+  "emailSubject": "We are verifying payment for MPC-260117-02",
+  "emailPreheader": "Your payment confirmation is still in progress.",
+  "items": [
+    {
+      "sku": "TRAY-PAL-01",
+      "name": "Palm-leaf desk tray",
+      "quantity": 1,
+      "unitPriceINR": 1290
+    },
+    {
+      "sku": "COR-COT-02",
+      "name": "Cotton cord keeper",
+      "quantity": 2,
+      "unitPriceINR": 280
+    }
+  ],
+  "shippingINR": 90,
+  "payment": {
+    "status": "pending",
+    "reference": "TEST-0000-0002",
+    "initiatedAt": "2026-11-17T07:21:00.000Z",
+    "expiresAt": "2026-11-17T07:33:00.000Z",
+    "expiryWindowMinutes": 12
+  }
+}

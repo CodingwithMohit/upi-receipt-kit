@@ -1,0 +1,30 @@
+{
+  "orderNumber": "MPC-260117-03",
+  "customerName": "Test Customer",
+  "orderedAt": "2026-11-17T07:40:00.000Z",
+  "emailSubject": "The payment window for MPC-260117-03 has closed",
+  "emailPreheader": "Review your payment status before trying again.",
+  "items": [
+    {
+      "sku": "NAP-IND-04",
+      "name": "Indigo napkin set",
+      "quantity": 1,
+      "unitPriceINR": 960
+    },
+    {
+      "sku": "JRN-HND-02",
+      "name": "Hand-bound pocket journal",
+      "quantity": 2,
+      "unitPriceINR": 410
+    }
+  ],
+  "shippingINR": 79,
+  "payment": {
+    "status": "expired",
+    "reference": "TEST-0000-0003",
+    "initiatedAt": "2026-11-17T07:41:00.000Z",
+    "expiresAt": "2026-11-17T07:53:00.000Z",
+    "expiryWindowMinutes": 12,
+    "expiredAt": "2026-11-17T07:53:00.000Z"
+  }
+}

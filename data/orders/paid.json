@@ -1,0 +1,36 @@
+{
+  "orderNumber": "MPC-260117-01",
+  "customerName": "Test Customer",
+  "orderedAt": "2026-11-17T07:10:00.000Z",
+  "emailSubject": "Payment received for order MPC-260117-01",
+  "emailPreheader": "Your sample payment is confirmed. Your receipt is ready.",
+  "items": [
+    {
+      "sku": "TWL-IND-02",
+      "name": "Indigo block-print tea towel",
+      "quantity": 2,
+      "unitPriceINR": 490
+    },
+    {
+      "sku": "DIY-BRS-01",
+      "name": "Brass diya pair",
+      "quantity": 1,
+      "unitPriceINR": 1250
+    },
+    {
+      "sku": "SAC-COT-03",
+      "name": "Cotton sachet set",
+      "quantity": 2,
+      "unitPriceINR": 320
+    }
+  ],
+  "shippingINR": 85,
+  "payment": {
+    "status": "paid",
+    "reference": "TEST-0000-0001",
+    "initiatedAt": "2026-11-17T07:11:00.000Z",
+    "expiresAt": "2026-11-17T07:23:00.000Z",
+    "expiryWindowMinutes": 12,
+    "settledAt": "2026-11-17T07:12:34.000Z"
+  }
+}
