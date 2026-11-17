@@ -12,6 +12,7 @@ import type { Merchant, ReceiptOrder } from "../types.js";
 import { color, space, type, receiptTheme } from "../theme.js";
 import { formatMoney } from "../data.js";
 import { formatDateTime } from "../format.js";
+import { Footer } from "../components/Footer.js";
 import { Header } from "../components/Header.js";
 import { ItemsTable } from "../components/ItemsTable.js";
 import { StatusBadge } from "../components/StatusBadge.js";
@@ -107,9 +108,7 @@ export function InvoiceDocument({ merchant, order }: InvoiceDocumentProps) {
       <PageFooter>
         <Row style={{ alignItems: "center", gap: space.md }}>
           <Column style={{ flex: 1 }}>
-            <Text style={{ color: color.muted, fontSize: type.body }}>
-              {merchant.name} · fictional order data
-            </Text>
+            <Footer merchant={merchant} compact />
           </Column>
           <Column style={{ alignItems: "end" }}>
             <Text style={{ color: color.muted, fontSize: type.body }}>

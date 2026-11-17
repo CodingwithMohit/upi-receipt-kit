@@ -113,6 +113,7 @@ async function writeInvoice(): Promise<void> {
   const pdfPath = resolve(outputDirectory, "invoice.pdf");
   await writeFile(htmlPath, result.html, "utf8");
 
+  // The Document root provides print HTML; Chromium applies its A4 page rules for page.pdf().
   const browser = await chromium.launch({ headless: true });
   try {
     const page = await browser.newPage();

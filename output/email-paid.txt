@@ -14,10 +14,10 @@ Order MPC-260117-01
 
 Placed 17 Nov 2026, 12:40 pm IST
 
-Item | Qty | Each | Line total
-Indigo block-print tea towel | 2 | ₹490.00 | ₹980.00
-Brass diya pair | 1 | ₹1,250.00 | ₹1,250.00
-Cotton sachet set | 2 | ₹320.00 | ₹640.00
+Item | Line total
+Indigo block-print tea towel · Qty 2 · Each ₹490.00 | ₹980.00
+Brass diya pair · Qty 1 · Each ₹1,250.00 | ₹1,250.00
+Cotton sachet set · Qty 2 · Each ₹320.00 | ₹640.00
 
 Subtotal
 

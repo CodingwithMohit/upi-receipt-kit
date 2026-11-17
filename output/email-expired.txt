@@ -14,9 +14,9 @@ Order MPC-260117-03
 
 Placed 17 Nov 2026, 1:10 pm IST
 
-Item | Qty | Each | Line total
-Indigo napkin set | 1 | ₹960.00 | ₹960.00
-Hand-bound pocket journal | 2 | ₹410.00 | ₹820.00
+Item | Line total
+Indigo napkin set · Qty 1 · Each ₹960.00 | ₹960.00
+Hand-bound pocket journal · Qty 2 · Each ₹410.00 | ₹820.00
 
 Subtotal
 

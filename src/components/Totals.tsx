@@ -10,7 +10,7 @@ interface TotalsProps {
 export function Totals({ order }: TotalsProps) {
   return (
     <Column style={{ gap: space.sm }}>
-      <Row style={{ gap: space.md }}>
+      <Row stackOnMobile={false} style={{ gap: space.md }}>
         <Column style={{ flex: 1 }}>
           <Text style={{ color: color.muted, fontSize: type.body }}>Subtotal</Text>
         </Column>
@@ -20,7 +20,7 @@ export function Totals({ order }: TotalsProps) {
           </Text>
         </Column>
       </Row>
-      <Row style={{ gap: space.md }}>
+      <Row stackOnMobile={false} style={{ gap: space.md }}>
         <Column style={{ flex: 1 }}>
           <Text style={{ color: color.muted, fontSize: type.body }}>Shipping</Text>
         </Column>
@@ -31,7 +31,7 @@ export function Totals({ order }: TotalsProps) {
         </Column>
       </Row>
       <Divider style={{ borderTop: { width: 1, style: "solid", color: color.border } }} />
-      <Row style={{ gap: space.md }}>
+      <Row stackOnMobile={false} style={{ gap: space.md }}>
         <Column style={{ flex: 1 }}>
           <Text style={{ color: color.foreground, fontSize: type.section, fontWeight: 700 }}>
             Total

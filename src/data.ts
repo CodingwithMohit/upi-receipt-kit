@@ -158,6 +158,7 @@ export function calculateOrder(source: OrderSource): ReceiptOrder {
   if (!Number.isSafeInteger(totalINR)) {
     throw new Error(`Order ${source.orderNumber} total exceeds the safe integer range`);
   }
+  // Keep the paid amount derived so the fixture cannot drift from its item totals.
   return {
     ...source,
     items,

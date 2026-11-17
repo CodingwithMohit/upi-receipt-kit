@@ -14,9 +14,9 @@ Order MPC-260117-02
 
 Placed 17 Nov 2026, 12:50 pm IST
 
-Item | Qty | Each | Line total
-Palm-leaf desk tray | 1 | ₹1,290.00 | ₹1,290.00
-Cotton cord keeper | 2 | ₹280.00 | ₹560.00
+Item | Line total
+Palm-leaf desk tray · Qty 1 · Each ₹1,290.00 | ₹1,290.00
+Cotton cord keeper · Qty 2 · Each ₹280.00 | ₹560.00
 
 Subtotal
 

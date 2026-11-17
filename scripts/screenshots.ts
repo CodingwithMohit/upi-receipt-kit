@@ -9,6 +9,7 @@ const captures = [
   { source: "receipt-paid.html", name: "receipt-paid.png", width: 1280, height: 1000 },
   { source: "receipt-pending.html", name: "receipt-pending.png", width: 1280, height: 1000 },
   { source: "receipt-expired.html", name: "receipt-expired.png", width: 1280, height: 1000 },
+  { source: "receipt-pending.html", name: "receipt-mobile.png", width: 390, height: 844 },
   { source: "invoice.html", name: "invoice.png", width: 794, height: 1123 },
 ];
 

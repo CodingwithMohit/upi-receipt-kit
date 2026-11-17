@@ -10,8 +10,8 @@ const labels: Record<PaymentStatus, string> = {
 
 const widths: Record<PaymentStatus, number> = {
   paid: 58,
-  pending: 76,
-  expired: 68,
+  pending: 92,
+  expired: 80,
 };
 
 interface StatusBadgeProps {

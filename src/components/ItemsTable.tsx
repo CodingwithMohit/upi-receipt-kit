@@ -2,6 +2,7 @@ import {
   Table,
   TableCell,
   TableRow,
+  Span,
   token,
 } from "@hyper-elements/react";
 import type { OrderLine } from "../types.js";
@@ -22,31 +23,22 @@ export function ItemsTable({ items }: ItemsTableProps) {
       }}
     >
       <TableRow header>
-        <TableCell style={{ width: "45%", color: color.foreground, fontSize: type.body, fontWeight: 700 }}>
+        <TableCell style={{ width: "65%", color: color.foreground, fontSize: type.body, fontWeight: 700 }}>
           Item
         </TableCell>
-        <TableCell style={{ width: "10%", color: color.foreground, fontSize: type.body, fontWeight: 700, textAlign: "right" }}>
-          Qty
-        </TableCell>
-        <TableCell style={{ width: "20%", color: color.foreground, fontSize: type.body, fontWeight: 700, textAlign: "right" }}>
-          Each
-        </TableCell>
-        <TableCell style={{ width: "25%", color: color.foreground, fontSize: type.body, fontWeight: 700, textAlign: "right" }}>
+        <TableCell style={{ width: "35%", color: color.foreground, fontSize: type.body, fontWeight: 700, textAlign: "right" }}>
           Line total
         </TableCell>
       </TableRow>
       {items.map((item) => (
         <TableRow key={item.sku}>
-          <TableCell style={{ width: "45%", color: color.foreground, fontSize: type.body }}>
-            {item.name}
+          <TableCell style={{ width: "65%", color: color.foreground, fontSize: type.body }}>
+            {item.name}{" "}
+            <Span style={{ color: color.muted, fontSize: type.body }}>
+              · Qty {item.quantity} · Each {formatMoney(item.unitPriceINR)}
+            </Span>
           </TableCell>
-          <TableCell style={{ width: "10%", color: color.foreground, fontSize: type.body, textAlign: "right" }}>
-            {item.quantity}
-          </TableCell>
-          <TableCell style={{ width: "20%", color: color.foreground, fontSize: type.body, textAlign: "right" }}>
-            {formatMoney(item.unitPriceINR)}
-          </TableCell>
-          <TableCell style={{ width: "25%", color: color.foreground, fontSize: type.body, textAlign: "right" }}>
+          <TableCell style={{ width: "35%", color: color.foreground, fontSize: type.body, textAlign: "right" }}>
             {formatMoney(item.lineTotalINR)}
           </TableCell>
         </TableRow>

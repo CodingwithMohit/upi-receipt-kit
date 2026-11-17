@@ -29,6 +29,7 @@ export const receiptTheme = defineTheme({
     heading: 1.2,
   },
   fonts: {
+    // Nirmala UI supplies the rupee glyph on Windows when Arial has no matching character.
     body: "Arial, 'Nirmala UI', Helvetica, sans-serif",
     heading: "Georgia, 'Times New Roman', serif",
   },
