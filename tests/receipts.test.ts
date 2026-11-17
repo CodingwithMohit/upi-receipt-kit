@@ -98,9 +98,13 @@ describe("generated files", () => {
     for (const status of ["paid", "pending", "expired"] as const) {
       const emailHtml = readFileSync(`output/email-${status}.html`, "utf8");
       const emailText = readFileSync(`output/email-${status}.txt`, "utf8");
+      const webHtml = readFileSync(`output/receipt-${status}.html`, "utf8");
       expect(Buffer.byteLength(emailHtml, "utf8")).toBeLessThan(100 * 1024);
       expect(emailHtml).not.toMatch(/<script\b/i);
       expect(emailText).toMatch(/^Subject: .+\r?\n/);
+      expect(webHtml).not.toMatch(/<script\b/i);
+      expect(webHtml).toContain('media="print"');
+      expect(webHtml).toContain("@page");
     }
   });
 });

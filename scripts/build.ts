@@ -11,6 +11,19 @@ import type { PaymentStatus } from "../src/types.js";
 
 const outputDirectory = resolve("output");
 const statuses: PaymentStatus[] = ["paid", "pending", "expired"];
+const printStyles = `<style media="print">
+@page { margin: 12mm; }
+html, body { background: #fff !important; }
+* { box-shadow: none !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+</style>`;
+
+function addPrintStyles(html: string): string {
+  const headEnd = html.indexOf("</head>");
+  if (headEnd < 0) {
+    throw new Error("Rendered web receipt is missing its closing head element");
+  }
+  return `${html.slice(0, headEnd)}${printStyles}\n${html.slice(headEnd)}`;
+}
 
 function renderIndex(): string {
   const links = [
@@ -94,7 +107,11 @@ async function writeWebReceipt(status: PaymentStatus): Promise<void> {
   if (warnings.length > 0) {
     throw new Error(`Web receipt ${status} has renderer warnings: ${warnings.map((item) => item.message).join("; ")}`);
   }
-  await writeFile(resolve(outputDirectory, `receipt-${status}.html`), result.html, "utf8");
+  await writeFile(
+    resolve(outputDirectory, `receipt-${status}.html`),
+    addPrintStyles(result.html),
+    "utf8",
+  );
   console.info(`Wrote receipt-${status}.html`);
 }
 
