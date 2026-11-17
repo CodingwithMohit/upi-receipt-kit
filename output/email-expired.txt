@@ -1,0 +1,49 @@
+Subject: The payment window for MPC-260117-03 has closed
+
+MOGRA PARCEL CO.
+
+Small things, thoughtfully packed
+
+Expired
+
+THE PAYMENT WINDOW HAS CLOSED
+
+This payment session expired before the store received a final confirmation.
+
+Order MPC-260117-03
+
+Placed 17 Nov 2026, 1:10 pm IST
+
+Item | Qty | Each | Line total
+Indigo napkin set | 1 | ₹960.00 | ₹960.00
+Hand-bound pocket journal | 2 | ₹410.00 | ₹820.00
+
+Subtotal
+
+₹1,780.00
+
+Shipping
+
+₹79.00
+
+---
+
+Total
+
+₹1,859.00
+
+Your bank or payment app may still show a pending debit. Check its final status before trying again. If it shows a completed payment, contact support before making another payment.
+
+Test reference: TEST-0000-0003
+
+Payment amount: ₹1,859.00
+
+Window closed 17 Nov 2026, 1:23 pm IST
+
+Retry payment (https://checkout.mogra.test/MPC-260117-03)
+
+Need help? help@mogra.test (mailto:help@mogra.test)
+
+Monday to Friday, 10:00 to 17:00 IST
+
+Sample merchant address, not a real location. All order and payment details here are fictional.

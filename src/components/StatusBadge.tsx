@@ -4,8 +4,14 @@ import { color, radius, type } from "../theme.js";
 
 const labels: Record<PaymentStatus, string> = {
   paid: "Paid",
-  pending: "Pending verification",
-  expired: "Payment window closed",
+  pending: "Pending",
+  expired: "Expired",
+};
+
+const widths: Record<PaymentStatus, number> = {
+  paid: 58,
+  pending: 76,
+  expired: 68,
 };
 
 interface StatusBadgeProps {
@@ -15,15 +21,19 @@ interface StatusBadgeProps {
 export function StatusBadge({ status }: StatusBadgeProps) {
   const isPaid = status === "paid";
   return (
-    <Column style={{ alignItems: "start" }}>
+    <Column
+      style={{
+        backgroundColor: isPaid ? color.primary : color.soft,
+        borderRadius: radius.pill,
+        padding: [6, 12],
+        width: widths[status],
+      }}
+    >
       <Text
         style={{
-          backgroundColor: isPaid ? color.primary : color.soft,
-          borderRadius: radius.pill,
           color: isPaid ? color.primaryForeground : color.foreground,
           fontSize: type.body,
           fontWeight: 700,
-          padding: [6, 12],
         }}
       >
         {labels[status]}

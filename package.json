@@ -8,7 +8,7 @@
     "build": "tsx scripts/build.ts",
     "preview": "tsx scripts/preview.ts",
     "screenshots": "tsx scripts/screenshots.ts",
-    "test": "vitest run",
+    "test": "npm run build && vitest run",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

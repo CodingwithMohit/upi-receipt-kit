@@ -29,7 +29,7 @@ export const receiptTheme = defineTheme({
     heading: 1.2,
   },
   fonts: {
-    body: "Arial, Helvetica, sans-serif",
+    body: "Arial, 'Nirmala UI', Helvetica, sans-serif",
     heading: "Georgia, 'Times New Roman', serif",
   },
   radii: {

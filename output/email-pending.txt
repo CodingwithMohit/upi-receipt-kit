@@ -1,0 +1,49 @@
+Subject: We are verifying payment for MPC-260117-02
+
+MOGRA PARCEL CO.
+
+Small things, thoughtfully packed
+
+Pending
+
+WE'RE VERIFYING YOUR PAYMENT
+
+The payment request was created, but the provider confirmation has not reached the store yet.
+
+Order MPC-260117-02
+
+Placed 17 Nov 2026, 12:50 pm IST
+
+Item | Qty | Each | Line total
+Palm-leaf desk tray | 1 | ₹1,290.00 | ₹1,290.00
+Cotton cord keeper | 2 | ₹280.00 | ₹560.00
+
+Subtotal
+
+₹1,850.00
+
+Shipping
+
+₹90.00
+
+---
+
+Total
+
+₹1,940.00
+
+A delayed confirmation can take a few minutes. If this status continues after the payment window, contact support with the test reference below.
+
+Test reference: TEST-0000-0002
+
+Payment amount: ₹1,940.00
+
+Payment window: 12 minutes, until 17 Nov 2026, 1:03 pm IST
+
+Check payment status (https://receipt.mogra.test/MPC-260117-02)
+
+Need help? help@mogra.test (mailto:help@mogra.test)
+
+Monday to Friday, 10:00 to 17:00 IST
+
+Sample merchant address, not a real location. All order and payment details here are fictional.

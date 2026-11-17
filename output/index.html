@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UPI Receipt Kit · Output index</title>
+  <style>
+    :root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; color: #1c302d; background: #f4f6f2; }
+    body { max-width: 1040px; margin: 0 auto; padding: 32px 20px; }
+    h1, h2 { font-family: Georgia, "Times New Roman", serif; }
+    a { color: #176b60; }
+    .file-links { display: flex; flex-wrap: wrap; gap: 12px 24px; padding: 20px; background: #fff; border: 1px solid #dce4de; border-radius: 12px; }
+    .email-preview { margin-top: 32px; }
+    iframe { display: block; max-width: 100%; border: 1px solid #dce4de; background: #fff; }
+    @media print { body { max-width: none; padding: 0; } .file-links { display: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>UPI Receipt Kit</h1>
+    <p>Generated sample outputs for one fictional order model.</p>
+    <nav class="file-links" aria-label="Generated files">
+      <a href="email-paid.html">Email · paid</a>
+      <a href="email-paid.txt">Plain text · paid</a>
+      <a href="receipt-paid.html">Web receipt · paid</a>
+      <a href="email-pending.html">Email · pending</a>
+      <a href="email-pending.txt">Plain text · pending</a>
+      <a href="receipt-pending.html">Web receipt · pending</a>
+      <a href="email-expired.html">Email · expired</a>
+      <a href="email-expired.txt">Plain text · expired</a>
+      <a href="receipt-expired.html">Web receipt · expired</a>
+      <a href="invoice.html">Print invoice · paid</a>
+      <a href="invoice.pdf">PDF invoice · paid</a>
+    </nav>
+    <section class="email-preview">
+      <h2>Email · paid</h2>
+      <p><a href="email-paid.html">Open email HTML</a></p>
+      <iframe src="email-paid.html" title="Email receipt, paid" width="600" height="920"></iframe>
+    </section>
+    <section class="email-preview">
+      <h2>Email · pending</h2>
+      <p><a href="email-pending.html">Open email HTML</a></p>
+      <iframe src="email-pending.html" title="Email receipt, pending" width="600" height="920"></iframe>
+    </section>
+    <section class="email-preview">
+      <h2>Email · expired</h2>
+      <p><a href="email-expired.html">Open email HTML</a></p>
+      <iframe src="email-expired.html" title="Email receipt, expired" width="600" height="920"></iframe>
+    </section>
+    <section>
+      <h2>Web receipts and invoice</h2>
+      <p>Open the linked web receipts above. The invoice is available as <a href="invoice.html">print HTML</a> and <a href="invoice.pdf">PDF</a>.</p>
+    </section>
+  </main>
+</body>
+</html>

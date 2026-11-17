@@ -1,0 +1,50 @@
+Subject: Payment received for order MPC-260117-01
+
+MOGRA PARCEL CO.
+
+Small things, thoughtfully packed
+
+Paid
+
+PAYMENT CONFIRMED
+
+Thank you, Test Customer. Your payment has been verified and your order is being prepared.
+
+Order MPC-260117-01
+
+Placed 17 Nov 2026, 12:40 pm IST
+
+Item | Qty | Each | Line total
+Indigo block-print tea towel | 2 | ₹490.00 | ₹980.00
+Brass diya pair | 1 | ₹1,250.00 | ₹1,250.00
+Cotton sachet set | 2 | ₹320.00 | ₹640.00
+
+Subtotal
+
+₹2,870.00
+
+Shipping
+
+₹85.00
+
+---
+
+Total
+
+₹2,955.00
+
+Keep this receipt for your records. The payment reference below is a fictional test value.
+
+Test reference: TEST-0000-0001
+
+Payment amount: ₹2,955.00
+
+Verified 17 Nov 2026, 12:42 pm IST
+
+View receipt (https://receipt.mogra.test/MPC-260117-01)
+
+Need help? help@mogra.test (mailto:help@mogra.test)
+
+Monday to Friday, 10:00 to 17:00 IST
+
+Sample merchant address, not a real location. All order and payment details here are fictional.
