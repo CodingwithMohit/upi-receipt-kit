@@ -4,6 +4,9 @@
   "private": true,
   "type": "module",
   "description": "A shared Hyper Elements template for fictional UPI payment receipts.",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "build": "tsx scripts/build.ts",
     "preview": "tsx scripts/preview.ts",
@@ -12,7 +15,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@hyper-elements/react": "^0.4.6",
+    "@hyper-elements/react": "0.4.6",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
@@ -23,6 +26,6 @@
     "playwright": "^1.65.1",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
-    "vitest": "^5.1.0"
+    "vitest": "4.1.12"
   }
 }
