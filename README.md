@@ -57,6 +57,14 @@ npm test
 - `output/invoice.html` and `output/invoice.pdf`: print HTML and a one-page A4 PDF for the paid order only.
 - `output/index.html`: a local index for the generated files.
 
+## How someone can use this
+
+This repository is a developer starter and a working example, not a live payment product. The generated HTML pages let anyone preview the designs, while the TypeScript source shows how one order object can produce matching email, web receipt, and PDF versions.
+
+A shop developer can replace the fictional merchant and order fixtures with their own data, then connect the templates to the shop's backend. The backend can provide each real order's items and payment state to generate a receipt. The shop can serve the web version, send the email version through an email service, and offer the PDF as a download.
+
+The project does not include checkout, payment verification, customer-specific data handling, an email-sending service, or deployment. The included states and receipts are fixed fictional samples. A developer must build those integrations and handle real customer and payment data securely before using this for actual orders. The sample invoice is not a GST or tax document.
+
 ## How the data drives the templates
 
 `data/merchant.json` holds the fictional shop details. Each file in `data/orders/` holds an order, its item prices, an email subject and preheader, and fake payment references and timestamps. `src/data.ts` checks those values, calculates each line amount, subtotal, shipping, total, and payment amount, then formats money with `Intl.NumberFormat("en-IN")`.
